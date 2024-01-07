@@ -9,9 +9,18 @@
     "lint": {
       "dependsOn": ["^lint"]
     },
+    "type-check": {
+      "dependsOn": ["topo"]
+    },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "clean": {
+      "cache": false
+    },
+    "topo": {
+      "dependsOn": ["^topo"]
     }
   }
 }
