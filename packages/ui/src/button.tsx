@@ -1,12 +1,16 @@
 "use client";
 
 interface ButtonProps {
+  appName: string;
   children: React.ReactNode;
   className?: string;
-  appName: string;
 }
 
-export const Button = ({ children, className, appName }: ButtonProps) => {
+export function Button({
+  appName,
+  children,
+  className,
+}: ButtonProps): JSX.IntrinsicElements["button"] {
   return (
     <button
       className={className}
@@ -15,4 +19,4 @@ export const Button = ({ children, className, appName }: ButtonProps) => {
       {children}
     </button>
   );
-};
+}
