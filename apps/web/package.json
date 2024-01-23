@@ -8,7 +8,8 @@
     "start": "next start",
     "clean": "rm -rf .next",
     "lint": "eslint . --max-warnings 0",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "analyze": "ANALYZE=true pnpm build"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
@@ -17,7 +18,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^14.1.0",
+    "@next/bundle-analyzer": "14.1.0",
+    "@next/eslint-plugin-next": "14.1.0",
     "@repo/eslint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",

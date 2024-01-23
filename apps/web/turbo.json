@@ -1,0 +1,10 @@
+{
+  "extends": ["//"],
+  "pipeline": {
+    "analyze": {
+      "passThroughEnv": ["ANALYZE"],
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
