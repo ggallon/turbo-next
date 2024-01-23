@@ -53,7 +53,7 @@ const LINKS = [
 
 export default function Page(): JSX.Element {
   return (
-    <main className={styles.main}>
+    <main className="flex flex-col justify-between items-center p-24 min-h-screen">
       <div className={styles.description}>
         <p>
           examples/basic&nbsp;
@@ -82,7 +82,7 @@ export default function Page(): JSX.Element {
         Click me!
       </Button>
 
-      <div className={styles.hero}>
+      <div className="relative flex place-items-center">
         <div className={styles.heroContent}>
           <div className={styles.logos}>
             <div className={styles.circles}>
@@ -110,7 +110,7 @@ export default function Page(): JSX.Element {
             </div>
           </div>
           <Gradient className={styles.backgroundGradient} conic />
-          <div className={styles.turborepoWordmarkContainer}>
+          <div className="bg-glow-conic">
             <svg
               className={styles.turborepoWordmark}
               viewBox="0 0 506 50"

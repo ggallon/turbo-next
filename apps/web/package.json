@@ -19,12 +19,15 @@
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.1.0",
     "@repo/eslint-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/eslint": "8.56.2",
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
     "eslint": "8.56.0",
+    "postcss": "8.4.33",
+    "tailwindcss": "0.0.0-insiders.f945fc8",
     "typescript": "5.3.3"
   }
 }

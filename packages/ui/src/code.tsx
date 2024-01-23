@@ -3,9 +3,6 @@ interface CodeProps {
   className?: string;
 }
 
-export function Code({
-  children,
-  className,
-}: CodeProps): JSX.Element {
+export function Code({ children, className }: CodeProps): JSX.Element {
   return <code className={className}>{children}</code>;
 }
