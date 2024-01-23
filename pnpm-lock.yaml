@@ -132,9 +132,6 @@ importers:
 
   tools/tailwind-config:
     devDependencies:
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
       tailwindcss:
         specifier: 0.0.0-insiders.f945fc8
         version: 0.0.0-insiders.f945fc8
