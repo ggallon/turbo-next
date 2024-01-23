@@ -6,6 +6,6 @@ interface CodeProps {
 export function Code({
   children,
   className,
-}: CodeProps): JSX.IntrinsicElements["code"] {
+}: CodeProps): JSX.Element {
   return <code className={className}>{children}</code>;
 }

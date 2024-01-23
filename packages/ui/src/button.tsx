@@ -6,11 +6,7 @@ interface ButtonProps {
   className?: string;
 }
 
-export function Button({
-  appName,
-  children,
-  className,
-}: ButtonProps): JSX.IntrinsicElements["button"] {
+export function Button({ appName, children, className }: ButtonProps) {
   return (
     <button
       className={className}
