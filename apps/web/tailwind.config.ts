@@ -3,7 +3,7 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
     "./app/**/*.{ts,tsx,mdx}",
     "./components/**/*.{ts,tsx,mdx}",
@@ -18,4 +18,6 @@ export default {
       },
     },
   },
-} satisfies Config;
+};
+
+export default config;
