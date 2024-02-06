@@ -13,23 +13,23 @@
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
-    "next": "14.1.1-canary.27",
+    "next": "14.1.1-canary.36",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "14.1.1-canary.9",
-    "@next/eslint-plugin-next": "14.1.1-canary.9",
+    "@next/bundle-analyzer": "14.1.1-canary.36",
+    "@next/eslint-plugin-next": "14.1.1-canary.36",
     "@repo/eslint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/eslint": "8.56.2",
-    "@types/node": "20.11.14",
-    "@types/react": "18.2.48",
+    "@types/node": "20.11.16",
+    "@types/react": "18.2.54",
     "@types/react-dom": "18.2.18",
     "eslint": "8.56.0",
-    "postcss": "8.4.33",
-    "tailwindcss": "0.0.0-insiders.6692950",
+    "postcss": "8.4.34",
+    "tailwindcss": "0.0.0-insiders.f57678e",
     "typescript": "5.3.3"
   }
 }
