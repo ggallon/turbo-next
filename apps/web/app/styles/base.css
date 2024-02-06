@@ -2,20 +2,20 @@
   --max-width: 1100px;
   --border-radius: 12px;
 
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
+  --foreground-rgb: oklch(100% 0 0);
+  --background-start-rgb: oklch(0% 0 0);
+  --background-end-rgb: oklch(0% 0 0);
 
-  --callout-rgb: 20, 20, 20;
-  --callout-border-rgb: 108, 108, 108;
-  --card-rgb: 100, 100, 100;
-  --card-border-rgb: 200, 200, 200;
+  --callout-rgb: oklch(19.13% 0 0);
+  --callout-border-rgb: oklch(53.13% 0 0);
+  --card-rgb: oklch(50.32% 0 0);
+  --card-border-rgb: oklch(83.28% 0 0);
 
   --glow-conic: conic-gradient(
     from 180deg at 50% 50%,
-    #2a8af6 0deg,
-    #a853ba 180deg,
-    #e92a67 360deg
+    oklch(63.54% 0.183 254.78) 0deg,
+    oklch(58.65% 0.173 320.36) 180deg,
+    oklch(61.32% 0.223 9.24) 360deg
   );
 }
 
@@ -26,11 +26,7 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--foreground-rgb);
+  background: linear-gradient(to bottom, transparent, var(--background-end-rgb))
+    var(--background-start-rgb);
 }
