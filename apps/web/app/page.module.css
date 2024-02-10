@@ -97,7 +97,7 @@
 
 .card p {
   margin: 0;
-  opacity: 0.6;
+  opacity: 60%;
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
@@ -163,7 +163,7 @@
     border: none;
     border-bottom: 1px solid oklch(from var(--callout-border-rgb) l c h / 25%);
     background: linear-gradient(
-      to bottom,
+      in oklab to bottom,
       var(--background-start-rgb),
       oklch(from var(--callout-rgb) l c h / 50%) ;
     );
@@ -178,7 +178,7 @@
     padding: 2rem;
     height: 200px;
     background: linear-gradient(
-      to bottom,
+      in oklab to bottom,
       transparent 0%,
       var(--background-end-rgb) 40%
     );
@@ -239,7 +239,7 @@
 
 .turborepoWordmark {
   width: 160px;
-  fill: white;
+  fill: var(--foreground-rgb);
 
   @media (min-width: 768px) {
     width: 200px;
@@ -274,7 +274,7 @@
 }
 
 .logoGradient {
-  opacity: 0.9;
+  opacity: 90%;
   width: 120px;
   height: 120px;
 }
@@ -283,7 +283,7 @@
   top: -500px;
   width: 1000px;
   height: 1000px;
-  opacity: 0.15;
+  opacity: 15%;
 }
 
 .button {

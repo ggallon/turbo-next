@@ -12,7 +12,7 @@
   --card-border-rgb: oklch(83.28% 0 0);
 
   --glow-conic: conic-gradient(
-    from 180deg at 50% 50%,
+    in oklab from 180deg at 50% 50%,
     oklch(63.54% 0.183 254.78) 0deg,
     oklch(58.65% 0.173 320.36) 180deg,
     oklch(61.32% 0.223 9.24) 360deg
@@ -27,6 +27,10 @@ body {
 
 body {
   color: var(--foreground-rgb);
-  background: linear-gradient(to bottom, transparent, var(--background-end-rgb))
+  background: linear-gradient(
+      in oklab to bottom,
+      transparent,
+      var(--background-end-rgb)
+    )
     var(--background-start-rgb);
 }
