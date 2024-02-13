@@ -7,7 +7,7 @@
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
-    "format": "prettier --write \"**/*.{js,ts,tsx,md,mdx}\""
+    "format": "prettier --write \"**/*.{cjs,js,mjs,ts,tsx,md,mdx}\""
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
