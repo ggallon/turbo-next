@@ -14,7 +14,14 @@ const project = resolve(process.cwd(), "tsconfig.json");
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  extends: ["eslint:recommended", "prettier", "eslint-config-turbo"],
+  extends: [
+    "eslint:recommended",
+    "prettier",
+    "eslint-config-turbo",
+    require.resolve("@vercel/style-guide/eslint/browser"),
+    require.resolve("@vercel/style-guide/eslint/react"),
+    require.resolve("@vercel/style-guide/eslint/typescript"),
+  ],
   plugins: ["only-warn"],
   globals: {
     React: true,
@@ -27,6 +34,16 @@ module.exports = {
     "import/resolver": {
       typescript: {
         project,
+      },
+    },
+    "jsx-a11y": {
+      components: {
+        Article: "article",
+        Button: "button",
+        Image: "img",
+        Input: "input",
+        Link: "a",
+        Video: "video",
       },
     },
   },

@@ -16,8 +16,11 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "prettier",
-    require.resolve("@vercel/style-guide/eslint/next"),
     "eslint-config-turbo",
+    require.resolve("@vercel/style-guide/eslint/browser"),
+    require.resolve("@vercel/style-guide/eslint/react"),
+    require.resolve("@vercel/style-guide/eslint/next"),
+    require.resolve("@vercel/style-guide/eslint/typescript"),
   ],
   globals: {
     React: true,
@@ -34,11 +37,32 @@ module.exports = {
         project,
       },
     },
+    "jsx-a11y": {
+      components: {
+        Article: "article",
+        Button: "button",
+        Image: "img",
+        Input: "input",
+        Link: "a",
+        Video: "video",
+      },
+    },
   },
   ignorePatterns: [
     // Ignore dotfiles
     ".*.js",
     "node_modules/",
   ],
-  overrides: [{ files: ["*.js?(x)", "*.ts?(x)"] }],
+  parser: "@typescript-eslint/parser",
+  rules: {
+    "import/no-default-export": "off",
+    "react/jsx-sort-props": "off",
+  },
+  overrides: [
+    { files: ["*.js?(x)", "*.ts?(x)"] },
+    {
+      files: ["app/api/**/*.ts"],
+      extends: [require.resolve("@vercel/style-guide/eslint/node")],
+    },
+  ],
 };
