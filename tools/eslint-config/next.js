@@ -56,6 +56,21 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   rules: {
     "import/no-default-export": "off",
+    "import/order": [
+      "warn",
+      {
+        groups: [
+          "builtin", // Node.js built-in modules
+          "external", // Packages
+          "type", // Typescript
+          "internal", // Aliased modules
+          "parent", // Relative parent
+          "sibling", // Relative sibling
+          "index", // Relative index
+        ],
+        "newlines-between": "always",
+      },
+    ],
     "react/jsx-sort-props": "off",
   },
   overrides: [
