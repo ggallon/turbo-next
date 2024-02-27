@@ -13,13 +13,13 @@
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
-    "next": "14.1.1-canary.61",
+    "next": "14.1.1-canary.77",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "14.1.1-canary.61",
-    "@next/eslint-plugin-next": "14.1.1-canary.61",
+    "@next/bundle-analyzer": "14.1.1-canary.77",
+    "@next/eslint-plugin-next": "14.1.1-canary.77",
     "@repo/eslint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
@@ -32,7 +32,7 @@
     "stylelint": "^16.2.1",
     "stylelint-config-recommended": "^14.0.0",
     "stylelint-gamut": "^1.3.4",
-    "tailwindcss": "0.0.0-insiders.a1e74f0",
+    "tailwindcss": "0.0.0-insiders.42e765f",
     "typescript": "5.3.3"
   }
 }
