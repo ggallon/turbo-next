@@ -5,12 +5,14 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "include": [
     "next-env.d.ts",
     "next.config.js",
-    "stylelint.config.mjs",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
