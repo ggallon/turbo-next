@@ -6,6 +6,6 @@
     ".": "./tailwind.config.ts"
   },
   "devDependencies": {
-    "tailwindcss": "0.0.0-insiders.42e765f"
+    "tailwindcss": "3.4.3"
   }
 }

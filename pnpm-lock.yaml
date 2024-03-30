@@ -70,8 +70,8 @@ importers:
         specifier: 8.4.35
         version: 8.4.35
       tailwindcss:
-        specifier: 0.0.0-insiders.42e765f
-        version: 0.0.0-insiders.42e765f
+        specifier: 3.4.3
+        version: 3.4.3
       typescript:
         specifier: 5.3.3
         version: 5.3.3
@@ -136,8 +136,8 @@ importers:
   tools/tailwind-config:
     devDependencies:
       tailwindcss:
-        specifier: 0.0.0-insiders.42e765f
-        version: 0.0.0-insiders.42e765f
+        specifier: 3.4.3
+        version: 3.4.3
 
   tools/typescript-config: {}
 
@@ -703,102 +703,6 @@ packages:
       '@swc/counter': 0.1.3
       tslib: 2.6.2
     dev: false
-
-  /@tailwindcss/oxide-darwin-arm64@0.0.0-insiders.42e765f:
-    resolution: {integrity: sha512-7m0U5IkIFnC52Cw4o++Fp2mQXCgZKQ8xUeN8htPjgr+wD7TVfdGqekNDtQLUU7KK+WVzo2mCEFdvLVSFg9DbAQ==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@tailwindcss/oxide-darwin-x64@0.0.0-insiders.42e765f:
-    resolution: {integrity: sha512-ubzmYKxFEOILfDDQ8hm/NYMrgn9Qr2UBQzdhRG5QS/7l5NSth88jIUAL02MN8+h+LCLMRfim7/DqJ98j3Tcq6w==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@tailwindcss/oxide-freebsd-x64@0.0.0-insiders.42e765f:
-    resolution: {integrity: sha512-yf/GvwfVWA3spXP8BQc44N/3MIgxPUNDHPEJDUo5QirSOvHtF3BuEPWM3DFXVpgwjC2eSXkWqSvij8w7xiaQ/A==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [freebsd]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@tailwindcss/oxide-linux-arm-gnueabihf@0.0.0-insiders.42e765f:
-    resolution: {integrity: sha512-Gtgu9531pFttTv6++QqAwGv4ds9NjznnVwWMfP48Ke8+iNJU8bMRz9zueebr0lNnO7sR6JjQPiyakWqAQ5vPHw==}
-    engines: {node: '>= 10'}
-    cpu: [arm]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@tailwindcss/oxide-linux-arm64-gnu@0.0.0-insiders.42e765f:
-    resolution: {integrity: sha512-e/wRG+XZlF9k4YjvBuJs4N4G/jdl/5FXfjswzd0uwk2qx/5ibYqxU7MND14wJTrtSGIbV/RQ5zaK79IYx6lA3w==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@tailwindcss/oxide-linux-arm64-musl@0.0.0-insiders.42e765f:
-    resolution: {integrity: sha512-dH3MaSdNoeoY//sRuA21OWs0q4G9XXRWgqNfvOeU9TAhNZEhR22nZTyaW3eY+K0Qg/G9cQYpF35ofxAIahqIog==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@tailwindcss/oxide-linux-x64-gnu@0.0.0-insiders.42e765f:
-    resolution: {integrity: sha512-mmojDYKHNO3BK6LrJAwyd2ieE6m8TyLT7nPtlHViiDUPfwzhNLmmhH0c+0FP/5ncgPEojYPYy5vgF9wZ7tO+YA==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@tailwindcss/oxide-linux-x64-musl@0.0.0-insiders.42e765f:
-    resolution: {integrity: sha512-890ZXChY7WSs59ssWwUOwUkiScobLH6ZyuRhU6Fu0GaSC14L5GnufRYnHRP1SArzNDPg+l2B5Dh/aszSQZP1KQ==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@tailwindcss/oxide-win32-x64-msvc@0.0.0-insiders.42e765f:
-    resolution: {integrity: sha512-M/7vSagB9QOOZDuYATiYGYyVyzqS/jlr6tU2nXkiTKvEVKBipSOFtxem+jHzHYymKRs47BHzF52EClrhHNyTMA==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@tailwindcss/oxide@0.0.0-insiders.42e765f:
-    resolution: {integrity: sha512-AbUYxvBUmf1HGpVLk8dooTxCtKBd5tyuFsO4M7U5n56UFcagYW8aPsEUoW0ziHDulhn5Tv50/0x3K9LU0hBrww==}
-    engines: {node: '>= 10'}
-    optionalDependencies:
-      '@tailwindcss/oxide-darwin-arm64': 0.0.0-insiders.42e765f
-      '@tailwindcss/oxide-darwin-x64': 0.0.0-insiders.42e765f
-      '@tailwindcss/oxide-freebsd-x64': 0.0.0-insiders.42e765f
-      '@tailwindcss/oxide-linux-arm-gnueabihf': 0.0.0-insiders.42e765f
-      '@tailwindcss/oxide-linux-arm64-gnu': 0.0.0-insiders.42e765f
-      '@tailwindcss/oxide-linux-arm64-musl': 0.0.0-insiders.42e765f
-      '@tailwindcss/oxide-linux-x64-gnu': 0.0.0-insiders.42e765f
-      '@tailwindcss/oxide-linux-x64-musl': 0.0.0-insiders.42e765f
-      '@tailwindcss/oxide-win32-x64-msvc': 0.0.0-insiders.42e765f
-    dev: true
 
   /@tootallnate/quickjs-emscripten@0.23.0:
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
@@ -5106,13 +5010,12 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
-  /tailwindcss@0.0.0-insiders.42e765f:
-    resolution: {integrity: sha512-vl30tSpBMrnI4Od3li2cz967pGHhI6ih+p+H9kzBSgBg+bLR1LWlvJfY93ojppCZMgEKT1ljLa6i0QEwBIUxcQ==}
-    engines: {node: '>=16.0.0'}
+  /tailwindcss@3.4.3:
+    resolution: {integrity: sha512-U7sxQk/n397Bmx4JHbJx/iSOOv5G+II3f1kpLpY2QeUv5DcPdcTsYLlusZfq1NthHS1c1cZoyFmmkex1rzke0A==}
+    engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
       '@alloc/quick-lru': 5.2.0
-      '@tailwindcss/oxide': 0.0.0-insiders.42e765f
       arg: 5.0.2
       browserslist: 4.22.3
       chokidar: 3.6.0
@@ -5122,8 +5025,7 @@ packages:
       glob-parent: 6.0.2
       is-glob: 4.0.3
       jiti: 1.21.0
-      lightningcss: 1.24.0
-      lilconfig: 3.0.0
+      lilconfig: 2.1.0
       micromatch: 4.0.5
       normalize-path: 3.0.0
       object-hash: 3.0.0

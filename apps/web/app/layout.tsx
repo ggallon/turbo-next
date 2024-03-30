@@ -14,8 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <html lang="en" className={inter.className}>
-      <body>{children}</body>
+    <html lang="en" className={`${inter.className} antialiased`}>
+      <body className="bg-gradient-to-b from-[rgb(var(--background-end-rgb))] text-[rgb(var(--foreground-rgb))] font-sans">
+        {children}
+      </body>
     </html>
   );
 }
