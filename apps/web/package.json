@@ -29,9 +29,6 @@
     "@types/react-dom": "18.2.19",
     "eslint": "8.56.0",
     "postcss": "8.4.35",
-    "stylelint": "^16.2.1",
-    "stylelint-config-recommended": "^14.0.0",
-    "stylelint-gamut": "^1.3.4",
     "tailwindcss": "0.0.0-insiders.42e765f",
     "typescript": "5.3.3"
   }
