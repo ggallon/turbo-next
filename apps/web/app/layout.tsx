@@ -1,7 +1,8 @@
-import "./styles/globals.css";
 import type { Metadata, Viewport } from "next";
+import { ThemeProvider } from "next-themes";
 
 import { inter } from "./fonts";
+import "./styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Turborepo",
@@ -21,9 +22,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <html lang="en" className={`${inter.className} antialiased`}>
+    <html
+      lang="en"
+      className={`${inter.className} antialiased`}
+      suppressHydrationWarning
+    >
       <body className="bg-gradient-to-b from-[rgb(var(--background-end-rgb))] text-[rgb(var(--foreground-rgb))] font-sans">
-        {children}
+        <ThemeProvider attribute="class" disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
